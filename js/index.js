@@ -21,13 +21,13 @@ document.getElementById('donate-btn-1').addEventListener('click', function () {
 
     // Conditions
     if (isNaN(donatedAmount)) {
-        alert('The amount should be a number');
+        alert('The amount must be a number');
         document.getElementById('input-1').value = '';
     } else if (donatedAmount < 0) {
         alert('Amount must be a positive number');
         document.getElementById('input-1').value = '';
     } else if (donatedAmount > accountBalance) {
-        alert('Donation amount cannot be greater than Account Balance');
+        alert('Insufficient Balance');
         document.getElementById('input-1').value = '';
     } else {
         // Update balance
@@ -38,7 +38,7 @@ document.getElementById('donate-btn-1').addEventListener('click', function () {
         // Create element for history section
         const div = document.createElement('div');
         div.innerHTML = `
-        <div class="border border-1 border-[#111111]/10 rounded-lg py-6 px-10 mb-10">
+        <div class="mx-3 md:mx-0 py-2 px-2 md:py-6 md:px-10 mb-4 border border-1 border-[#111111]/10 rounded-lg">
             <p class="text-xl font-bold text-black mb-6">${donatedAmount} Taka is Donated for ${innerTexts}</p>
             <p class="text-base font-light text-[#111111]/70">Date : ${currentDate}</p>
         </div>
@@ -64,11 +64,11 @@ document.getElementById('donate-btn-2').addEventListener('click', function () {
 
     // Conditions
     if (isNaN(donatedAmount)) {
-        alert('The amount should be a number');
+        alert('The amount must be a number');
     } else if (donatedAmount < 0) {
         alert('Amount must be a positive number');
     } else if (donatedAmount > accountBalance) {
-        alert('Donation cannot be greater than Account Balance');
+        alert('Insufficient Balance');
     } else {
         // Update balance
         document.getElementById('account-balance').innerText = currentAccountBalance;
@@ -105,11 +105,11 @@ document.getElementById('donate-btn-3').addEventListener('click', function () {
 
     // Conditions
     if (isNaN(donatedAmount)) {
-        alert('The amount should be a number');
+        alert('The amount must be a number');
     } else if (donatedAmount < 0) {
         alert('Amount must be a positive number');
     } else if (donatedAmount > accountBalance) {
-        alert('Donation cannot be greater than Account Balance');
+        alert('Insufficient Balance');
     } else {
         // Update balance
         document.getElementById('account-balance').innerText = currentAccountBalance;

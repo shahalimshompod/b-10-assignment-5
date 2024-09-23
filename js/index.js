@@ -127,3 +127,7 @@ document.getElementById('donate-btn-3').addEventListener('click', function () {
         document.getElementById('my_modal_3').showModal();
     }
 });
+
+document.getElementById('blog-btn').addEventListener('click', function(){
+    window.location.href = '../blog.html'
+})

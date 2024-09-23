@@ -36,4 +36,6 @@ function getInnerText(id){
     const theInnerText = document.getElementById(id).innerText;
     return theInnerText;
 }
-// modal showing
+
+// click to blog
+

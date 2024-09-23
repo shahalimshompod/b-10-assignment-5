@@ -22,10 +22,13 @@ document.getElementById('donate-btn-1').addEventListener('click', function () {
     // Conditions
     if (isNaN(donatedAmount)) {
         alert('The amount should be a number');
+        document.getElementById('input-1').value = '';
     } else if (donatedAmount < 0) {
         alert('Amount must be a positive number');
+        document.getElementById('input-1').value = '';
     } else if (donatedAmount > accountBalance) {
         alert('Donation amount cannot be greater than Account Balance');
+        document.getElementById('input-1').value = '';
     } else {
         // Update balance
         document.getElementById('account-balance').innerText = currentAccountBalance;
@@ -129,5 +132,5 @@ document.getElementById('donate-btn-3').addEventListener('click', function () {
 });
 
 document.getElementById('blog-btn').addEventListener('click', function(){
-    window.location.href = '../blog.html'
+    window.location.href = 'https://shahalimshompod.github.io/b-10-assignment-5/blog.html'
 })

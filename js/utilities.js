@@ -31,7 +31,7 @@ function getTextNumberValues(id){
     return textValueToNumber
 }
 
-// getting innertext
+// getting innerText
 function getInnerText(id){
     const theInnerText = document.getElementById(id).innerText;
     return theInnerText;

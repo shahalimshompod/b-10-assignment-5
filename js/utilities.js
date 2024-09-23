@@ -1,5 +1,5 @@
 // donation and history button functionalities //
-function historyBtnColorChange(id){
+function historyBtnColorChange(id) {
     document.getElementById('donation-btn').classList.remove('bg-[#B4F461]')
     document.getElementById('history-btn').classList.add('bg-[#B4F461]');
 
@@ -9,7 +9,7 @@ function historyBtnColorChange(id){
 
 }
 
-function donationBtnColorChange(id){
+function donationBtnColorChange(id) {
     document.getElementById('history-btn').classList.remove('bg-[#B4F461]')
     document.getElementById('donation-btn').classList.add('bg-[#B4F461]')
 
@@ -20,7 +20,7 @@ function donationBtnColorChange(id){
 
 
 // getting input values
-function getInputValues(id){
+function getInputValues(id) {
     const inputValues = document.getElementById(id).value;
     const valueToNumber = parseFloat(inputValues);
     return valueToNumber;
@@ -29,7 +29,7 @@ function getInputValues(id){
 
 
 // getting text number values 
-function getTextNumberValues(id){
+function getTextNumberValues(id) {
     const textNumberValues = document.getElementById(id).innerText;
     const textValueToNumber = parseFloat(textNumberValues);
     return textValueToNumber
@@ -38,7 +38,7 @@ function getTextNumberValues(id){
 
 
 // getting innerText
-function getInnerText(id){
+function getInnerText(id) {
     const theInnerText = document.getElementById(id).innerText;
     return theInnerText;
 }

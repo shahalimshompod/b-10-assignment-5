@@ -1,9 +1,9 @@
 // Donation and history button functionalities //
-document.getElementById('history-btn').addEventListener('click', function(){
+document.getElementById('history-btn').addEventListener('click', function () {
     historyBtnColorChange('history-btn')
 })
 
-document.getElementById('donation-btn').addEventListener('click', function(){
+document.getElementById('donation-btn').addEventListener('click', function () {
     donationBtnColorChange('donation-btn')
 })
 
@@ -22,19 +22,19 @@ document.getElementById('donate-btn-1').addEventListener('click', function () {
     const currentDate = new Date();
 
     // Conditions
-      if(isNaN(donatedAmount)) {
+    if (isNaN(donatedAmount)) {
         alert('The amount must be a number');
         document.getElementById('input-1').value = '';
     } else if (donatedAmount < 0) {
         alert('Amount must be a positive number');
         document.getElementById('input-1').value = '';
-    }else if (donatedAmount === 0) {
+    } else if (donatedAmount === 0) {
         alert('Please provide a valid amount');
         document.getElementById('input-1').value = '';
     } else if (donatedAmount > accountBalance) {
         alert('Insufficient Balance');
         document.getElementById('input-1').value = '';
-    }else {
+    } else {
         // Update balance
         document.getElementById('account-balance').innerText = currentAccountBalance;
         document.getElementById('card-1-balance').innerText = currentCardDonationAmount;
@@ -158,13 +158,13 @@ document.getElementById('donate-btn-3').addEventListener('click', function () {
         // Show modal
         document.getElementById('my_modal_3').showModal();
 
-        
+
     }
 })
 
 
 
 // for blog button
-document.getElementById('blog-btn').addEventListener('click', function(){
+document.getElementById('blog-btn').addEventListener('click', function () {
     window.location.href = 'https://shahalimshompod.github.io/b-10-assignment-5/blog.html'
 })

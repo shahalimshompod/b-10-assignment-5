@@ -24,31 +24,30 @@
 
 <body class="font-[lexend]">
     <!-- header section here -->
-    <header class="sticky top-0 z-50 backdrop-blur-xl border-b mb-16">
-        <div class="bg-[#f9f7f3] z-0 py-7">
-            <nav class="flex justify-between items-center container mx-auto">
-                
+    <header class="sticky top-0 z-50 backdrop-blur-xl border-b mb-10">
+        <div class="bg-[#f9f7f3]/30 z-0 py-3 md:py-7">
+            <nav class="flex justify-around md:justify-between items-center container mx-auto">
+
                 <button id="home-btn" class="btn h-full px-8 py-3 bg-[#B4F461] text-xl font-semibold">Home</button>
 
                 <div class="flex justify-center gap-4 items-center">
-                    <img src="assets/logo.png" alt="donate-logo">
-                    <h4 class="text-xl font-semibold">Donate Bangladesh</h4>
+                    <img class="w-8 md:w-12" src="assets/logo.png" alt="donate-logo">
+                    <h4 class="text-xl font-semibold hidden md:block">Donate Bangladesh</h4>
                 </div>
 
-                <div class="flex justify-between gap-4 items-center">
+                <div class="flex justify-between gap-2 items-center">
                     <img src="assets/coin.png" alt="coin-logo">
-                    <h4 class="text-xl font-medium text-[#111111]/70">5500 BDT</h4>
+                    <h4 class="text-xl font-medium text-[#111111]/70"><span id="account-balance">5500</span> BDT</h4>
                 </div>
             </nav>
         </div>
-
     </header>
-    <main class="container mx-auto">
-        <div class="flex items-center mb-10">
+    <main class="container mx-auto ">
+        <div class="flex items-center mb-10 mx-4 md:mx-0">
             <h1 class="text-4xl font-bold text-black">Important FAQ</h1>
             <img class="w-10 h-10" src="assets/question.gif" alt="question">
         </div>
-        <div>
+        <div class="mx-4 md:mx-0">
             <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded-none rounded-t-lg py-5">
                 <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
                 <div class="collapse-content">
@@ -64,7 +63,7 @@
                 <div class="collapse-content">
                     <p>There are 6 ways to select an element from the DOM lets say- getElementById(),
                         getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll(),
-                        getElementsByName()... But we frequently use getElementById() and getElementsByClassName() to
+                        getElementsByName()... But I frequently use getElementById() and getElementsByClassName() to
                         select element from the DOM. For getElementById(), first I put a id in which element I want to
                         select. After that I put the id name in the ('') of getElementById(). For example
                         getElementById('id-name')

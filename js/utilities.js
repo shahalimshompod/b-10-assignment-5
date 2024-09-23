@@ -37,10 +37,3 @@ function getInnerText(id){
     return theInnerText;
 }
 // modal showing
-function showModal(id){
-    document.getElementById('modal-1').classList.add('hidden');
-    document.getElementById('modal-2').classList.add('hidden');
-    document.getElementById('modal-3').classList.add('hidden');
-
-    document.getElementById(id).classList.remove('hidden');
-}

@@ -70,22 +70,23 @@
                         <input id="input-1" type="text" placeholder="Write Donation Amount"
                             class="input input-bordered w-full h-16 mb-5" />
 
-                        
+
                         <!-- Open the modal using ID.showModal() method -->
-                        <button id="card-one-donate-now-btn" class="btn bg-[#B4F461] w-full h-16 text-xl font-semibold text-black">Donate Now</button>
-                        <div id="modal-1" class="modal">
+                        <button id="donate-btn-1" class="btn  bg-[#B4F461] w-full h-16 text-xl font-semibold text-black">Donate Now</button>
+                        <dialog id="my_modal_1" class="modal">
                             <div class="modal-box flex flex-col justify-center items-center">
                                 <h3 class="text-3xl font-bold mb-4">Congrates!</h3>
                                 <img class="mb-8" src="assets/coin.png" alt="coin-logo">
                                 <p class="mb-5">You Have Donated for Humankind</p>
                                 <h3 class="text-xl font-bold mb-4">Successfully</h3>
                                 <div class="modal-action">
-                                    
+                                    <form method="dialog">
+                                        <!-- if there is a button in form, it will close the modal -->
                                         <button class="btn">Close Confirmation</button>
-                                    
+                                    </form>
                                 </div>
                             </div>
-                        </div>
+                        </dialog>
                     </div>
                 </div>
             </div>
@@ -99,9 +100,9 @@
                     <div class="py-8 pr-8">
                         <div class="bg-[#111111]/5 flex justify-center items-center gap-3 py-3 rounded-xl w-36 mb-4">
                             <img src="assets/coin.png" alt="coin-logo">
-                            <p>600 BDT</p>
+                            <p><span id="card-2-balance">600</span> BDT</p>
                         </div>
-                        <h3 class="text-4xl font-bold text-black mb-2">Donate for Flood at Noakhali, Bangladesh</h3>
+                        <h3 id="feni-flood" class="text-4xl font-bold text-black mb-2">Donate for Flood Relief in Feni,Bangladesh</h3>
                         <p class="text-xl font-light text-[#111111]/70 mb-4 leading-loose">The recent floods in Feni
                             have devastated local communities, leading to severe disruption and loss. Your generous
                             donation will help provide immediate aid, including food, clean water, and medical supplies,
@@ -109,15 +110,14 @@
                             lives in the aftermath of this disaster. Every contribution counts towards making a real
                             difference. Please consider donating today to assist those in urgent need.</p>
 
-                        <input type="text" placeholder="Write Donation Amount"
+                        <input id="input-2" type="text" placeholder="Write Donation Amount"
                             class="input input-bordered w-full h-16 mb-5" />
 
-                    
+
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn bg-[#B4F461] w-full h-16 text-xl font-semibold text-black">Donate
-                            Now</button>
-                        <dialog id="modal-2" class="modal">
+                        <button id="donate-btn-2" class="btn  bg-[#B4F461] w-full h-16 text-xl font-semibold text-black">Donate Now</button>
+                        <dialog id="my_modal_2" class="modal">
                             <div class="modal-box flex flex-col justify-center items-center">
                                 <h3 class="text-3xl font-bold mb-4">Congrates!</h3>
                                 <img class="mb-8" src="assets/coin.png" alt="coin-logo">
@@ -147,7 +147,7 @@
                             <img src="assets/coin.png" alt="coin-logo">
                             <p>2500 BDT</p>
                         </div>
-                        <h3 class="text-4xl font-bold text-black mb-2">Donate for Flood at Noakhali, Bangladesh</h3>
+                        <h3 class="text-4xl font-bold text-black mb-2">Aid for Injured in the Quota Movement</h3>
                         <p class="text-xl font-light text-[#111111]/70 mb-3 leading-loose">The recent Quota movement has
                             resulted in numerous injuries and significant hardship for many individuals. Your support is
                             crucial in providing medical assistance, rehabilitation, and necessary supplies to those
@@ -159,12 +159,11 @@
                         <input type="text" placeholder="Write Donation Amount"
                             class="input input-bordered w-full h-16 mb-5" />
 
-                        
+
 
                         <!-- Open the modal using ID.showModal() method -->
-                        <button class="btn bg-[#B4F461] w-full h-16 text-xl font-semibold text-black">Donate
-                            Now</button>
-                        <dialog id="modal-3" class="modal">
+                        <button id="donate-btn-3" class="btn  bg-[#B4F461] w-full h-16 text-xl font-semibold text-black">Donate Now</button>
+                        <dialog id="my_modal_3" class="modal">
                             <div class="modal-box flex flex-col justify-center items-center">
                                 <h3 class="text-3xl font-bold mb-4">Congrates!</h3>
                                 <img class="mb-8" src="assets/coin.png" alt="coin-logo">
@@ -184,8 +183,8 @@
             </div>
 
         </div>
-        <div id="history-part">
-            
+        <div id="history-part" class="hidden">
+
         </div>
     </main>
     <footer id="footer" class="w-full h-[200px] bg-[#f9f7f3]">

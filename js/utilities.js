@@ -31,6 +31,11 @@ function getTextNumberValues(id){
     return textValueToNumber
 }
 
+// getting innertext
+function getInnerText(id){
+    const theInnerText = document.getElementById(id).innerText;
+    return theInnerText;
+}
 // modal showing
 function showModal(id){
     document.getElementById('modal-1').classList.add('hidden');

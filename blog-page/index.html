@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assignment-5</title>
+    <!-- Google font here -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
+        .lexend {
+            font-family: "Lexend", sans-serif;
+            font-optical-sizing: auto;
+            font-style: normal;
+        }
+    </style>
+
+    <!-- tailwind and daisy ui cdn here -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.12.10/dist/full.min.css" rel="stylesheet" type="text/css" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+
+<body class="font-[lexend]">
+    <!-- header section here -->
+    <header class="sticky top-0 z-50 backdrop-blur-xl border-b mb-16">
+        <div class="bg-[#f9f7f3] z-0 py-7">
+            <nav class="flex justify-between items-center container mx-auto">
+                <button class="px-8 py-3 bg-[#B4F461] rounded-lg text-xl font-semibold">Home</button>
+
+                <div class="flex justify-center gap-4 items-center">
+                    <img src="/assets/logo.png" alt="donate-logo">
+                    <h4 class="text-xl font-semibold">Donate Bangladesh</h4>
+                </div>
+
+                <div class="flex justify-between gap-4 items-center">
+                    <img src="/assets/coin.png" alt="coin-logo">
+                    <h4 class="text-xl font-medium text-[#111111]/70">5500 BDT</h4>
+                </div>
+            </nav>
+        </div>
+
+    </header>
+    <main class="container mx-auto">
+        <div class="flex items-center mb-10">
+            <h1 class="text-4xl font-bold text-black">Important FAQ</h1>
+            <img class="w-10 h-10" src="/assets/question.gif" alt="question">
+        </div>
+        <div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded-none rounded-t-lg py-5">
+                <div class="collapse-title text-xl font-medium">What is the Document Object Model (DOM)?</div>
+                <div class="collapse-content">
+                    <p>The Document Object Model (DOM) is a programming interface for web documents. It is the structure
+                        of an HTML document as a tree of objects, where each elements in the document becomes a node of
+                        the tree. We can easily manipulate, design and make our website interactive through javascript.
+                    </p>
+                </div>
+            </div>
+
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded-none py-5">
+                <div class="collapse-title text-xl font-medium">How do you select an element from the DOM?</div>
+                <div class="collapse-content">
+                    <p>There are 6 ways to select an element from the DOM lets say- getElementById(),
+                        getElementsByClassName(), getElementsByTagName(), querySelector(), querySelectorAll(),
+                        getElementsByName()... But we frequently use getElementById() and getElementsByClassName() to
+                        select element from the DOM. For getElementById(), first I put a id in which element I want to
+                        select. After that I put the id name in the ('') of getElementById(). For example
+                        getElementById('id-name')
+                    </p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded-none py-5">
+                <div class="collapse-title text-xl font-medium">What is event delegation in the context of the DOM, and
+                    why is it useful?</div>
+                <div class="collapse-content">
+                    <p>Event Delegation is a technology in the DOM where we don't need to attach event listeners to
+                        multiple child element. We can attach a single event listener to their parent element. Cause
+                        this works with the 'bubble up' technique.
+                        It is usefull cause is reduces the number of event listeners and improving performance. And It
+                        handles dynamic elements.
+                    </p>
+                </div>
+            </div>
+            <div tabindex="0" class="collapse collapse-arrow border-base-300 border rounded-none rounded-b-lg py-5">
+                <div class="collapse-title text-xl font-medium">How do you manipulate an element's attributes and styles
+                    using the DOM?</div>
+                <div class="collapse-content">
+                    <p>I can manipulate an element's attributes and styles in the DOM using simple methods. To get an
+                        attribute from an element, I use element.getAttribute('attributeName');, and to set a new
+                        attribute I use element.setAttribute('attributeName', 'value');. If I want to remove an attribute, I do element.removeAttribute('attributeName');.
+
+                        For styles, I can modify an element's inline styles by accessing the style property. For
+                        example, to change the color of an element, I write element.style.color = 'red';. If
+                        I working with CSS classes, I add a class to an element using
+                        element.classList.add('className');, or remove it with element.classList.remove('className');.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+
+</html>

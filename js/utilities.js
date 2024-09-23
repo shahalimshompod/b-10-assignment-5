@@ -17,6 +17,8 @@ function donationBtnColorChange(id){
     document.getElementById('history-part').classList.add('hidden')
 }
 
+
+
 // getting input values
 function getInputValues(id){
     const inputValues = document.getElementById(id).value;
@@ -24,12 +26,16 @@ function getInputValues(id){
     return valueToNumber;
 }
 
+
+
 // getting text number values 
 function getTextNumberValues(id){
     const textNumberValues = document.getElementById(id).innerText;
     const textValueToNumber = parseFloat(textNumberValues);
     return textValueToNumber
 }
+
+
 
 // getting innerText
 function getInnerText(id){

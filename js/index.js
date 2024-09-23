@@ -1,4 +1,4 @@
-// Donation and history button funtionalities //
+// Donation and history button functionalities //
 document.getElementById('history-btn').addEventListener('click', function(){
     historyBtnColorChange('history-btn')
 })
@@ -6,6 +6,8 @@ document.getElementById('history-btn').addEventListener('click', function(){
 document.getElementById('donation-btn').addEventListener('click', function(){
     donationBtnColorChange('donation-btn')
 })
+
+
 
 // Functionality for each card - card-1
 document.getElementById('donate-btn-1').addEventListener('click', function () {
@@ -26,6 +28,9 @@ document.getElementById('donate-btn-1').addEventListener('click', function () {
     } else if (donatedAmount < 0) {
         alert('Amount must be a positive number');
         document.getElementById('input-1').value = '';
+    }else if (donatedAmount === 0) {
+        alert('Please provide a valid amount');
+        document.getElementById('input-1').value = '';
     } else if (donatedAmount > accountBalance) {
         alert('Insufficient Balance');
         document.getElementById('input-1').value = '';
@@ -45,10 +50,15 @@ document.getElementById('donate-btn-1').addEventListener('click', function () {
         `;
         document.getElementById('history-part').appendChild(div);
 
+        //showing donatedAmount in modal
+        document.getElementById('send-money-show-modal-1').innerText = donatedAmount;
+
         // Show modal
         document.getElementById('my_modal_1').showModal();
     }
-});
+})
+
+
 
 // Functionality for card-2
 document.getElementById('donate-btn-2').addEventListener('click', function () {
@@ -69,6 +79,9 @@ document.getElementById('donate-btn-2').addEventListener('click', function () {
     } else if (donatedAmount < 0) {
         alert('Amount must be a positive number');
         document.getElementById('input-2').value = '';
+    } else if (donatedAmount === 0) {
+        alert('Please provide a valid amount');
+        document.getElementById('input-2').value = '';
     } else if (donatedAmount > accountBalance) {
         alert('Insufficient Balance');
         document.getElementById('input-2').value = '';
@@ -88,13 +101,17 @@ document.getElementById('donate-btn-2').addEventListener('click', function () {
         `;
         document.getElementById('history-part').appendChild(div);
 
+        //showing donatedAmount in modal
+        document.getElementById('send-money-show-modal-2').innerText = donatedAmount;
+
         // Show modal
         document.getElementById('my_modal_2').showModal();
     }
-});
+})
 
-// funtionality for card-3
 
+
+// Functionality for card-3
 document.getElementById('donate-btn-3').addEventListener('click', function () {
     const donatedAmount = getInputValues('input-3');
     const accountBalance = getTextNumberValues('account-balance');
@@ -112,6 +129,9 @@ document.getElementById('donate-btn-3').addEventListener('click', function () {
         document.getElementById('input-3').value = '';
     } else if (donatedAmount < 0) {
         alert('Amount must be a positive number');
+        document.getElementById('input-3').value = '';
+    } else if (donatedAmount === 0) {
+        alert('Please provide a valid amount');
         document.getElementById('input-3').value = '';
     } else if (donatedAmount > accountBalance) {
         alert('Insufficient Balance');
@@ -132,11 +152,19 @@ document.getElementById('donate-btn-3').addEventListener('click', function () {
         `;
         document.getElementById('history-part').appendChild(div);
 
+        //showing donatedAmount in modal
+        document.getElementById('send-money-show-modal-3').innerText = donatedAmount;
+
         // Show modal
         document.getElementById('my_modal_3').showModal();
-    }
-});
 
+        
+    }
+})
+
+
+
+// for blog button
 document.getElementById('blog-btn').addEventListener('click', function(){
     window.location.href = 'https://shahalimshompod.github.io/b-10-assignment-5/blog.html'
 })

@@ -132,8 +132,7 @@
                             <div class="modal-box flex flex-col justify-center items-center">
                                 <h3 class="text-3xl font-bold mb-4">Congrates!</h3>
                                 <img class="mb-8" src="assets/coin.png" alt="coin-logo">
-                                <p class="mb-5">You Have Donated <span id="send-money-show-modal-2"></span> TAKA for
-                                    Humankind</p>
+                                <p class="mb-5">You Have Donated <span id="send-money-show-modal-2"></span> TAKA for Humankind</p>
                                 <h3 class="text-xl font-bold mb-4">Successfully</h3>
                                 <div class="modal-action">
                                     <form method="dialog">
@@ -200,7 +199,21 @@
             </div>
 
         </div>
-        <div id="history-part" class="hidden">
+        <div id="history-container" class="hidden">
+            <div id="transaction-history" class="hidden">
+                <div class="flex justify-between items-center border-b mb-5 pb-5 mx-3 md:mx-0">
+                    <h2 class="text-xl md:text-4xl font-bold text-black">TRANSACTION HISTORY</h2>
+                    <button id="clear-all-btn" class="btn btn-xs">Clear history</button>
+                </div>
+            </div>
+            <div id="transactions-conduct" class="flex flex-col justify-center items-center">
+                <h4 class="text-xl md:text-3xl font-bold text-center mb-20">No transactions have been conducted</h4>
+            <img class="w-20 md:w-40" src="assets/sleep.gif" alt="emotions">
+            </div>
+
+            <div id="history-part" class="hidden">
+
+            </div>
 
         </div>
     </main>

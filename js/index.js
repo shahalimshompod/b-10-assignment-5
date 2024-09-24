@@ -50,6 +50,10 @@ document.getElementById('donate-btn-1').addEventListener('click', function () {
         `;
         document.getElementById('history-part').appendChild(div);
 
+        // Transaction conduction in the history
+        document.getElementById('transactions-conduct').classList.add('hidden')
+        document.getElementById('transaction-history').classList.remove('hidden')
+
         //showing donatedAmount in modal
         document.getElementById('send-money-show-modal-1').innerText = donatedAmount;
 
@@ -167,4 +171,11 @@ document.getElementById('donate-btn-3').addEventListener('click', function () {
 // for blog button
 document.getElementById('blog-btn').addEventListener('click', function () {
     window.location.href = 'https://shahalimshompod.github.io/b-10-assignment-5/blog.html'
+})
+
+// Clear all button clicked in history tab
+document.getElementById('clear-all-btn').addEventListener('click', function(){
+    clearAllBtn('transaction-history');
+    document.getElementById('history-part').innerHTML = '';
+    document.getElementById('transactions-conduct').classList.remove('hidden');
 })

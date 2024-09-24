@@ -17,6 +17,7 @@ function donationBtnColorChange(id) {
     document.getElementById('donation-part').classList.remove('hidden')
     document.getElementById('history-container').classList.add('hidden')
     document.getElementById('history-part').classList.add('hidden')
+    document.getElementById('footer').classList.remove('hidden')
 }
 
 

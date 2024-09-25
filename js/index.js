@@ -14,7 +14,6 @@ document.getElementById('donation-btn').addEventListener('click', function () {
 // card-1
 document.getElementById('donate-btn-1').addEventListener('click', function () {
     const donatedAmount = getInputValues('input-1');
-    console.log(typeof donatedAmount);
     const accountBalance = getTextNumberValues('account-balance');
     const cardDonationAmount = getTextNumberValues('card-1-balance');
     const innerTexts = getInnerText('noakhali-flood');

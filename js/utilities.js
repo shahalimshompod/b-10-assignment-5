@@ -25,8 +25,7 @@ function donationBtnColorChange(id) {
 // getting input values
 function getInputValues(id) {
     const inputValues = document.getElementById(id).value;
-    const valueToNumber = parseFloat(inputValues);
-    return valueToNumber;
+    return inputValues;
 }
 
 
